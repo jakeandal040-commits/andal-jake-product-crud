@@ -6,12 +6,60 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to LavaLust</title>
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700;800&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
+    <title>Welcome - LavaLust CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        .welcome-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 500px;
+        }
+        .welcome-card h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .welcome-card p {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 16px;
+        }
+        .btn-group-custom {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .btn-group-custom a {
+            flex: 1;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-card">
+        <h1>🎉 Welcome to LavaLust CRUD</h1>
+        <p>A complete product management application with user authentication</p>
+        
+        <div class="btn-group-custom">
+            <a href="/auth/login" class="btn btn-primary btn-lg">Login</a>
+            <a href="/auth/register" class="btn btn-success btn-lg">Register</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
         :root {
             --lava: #dd4814;
